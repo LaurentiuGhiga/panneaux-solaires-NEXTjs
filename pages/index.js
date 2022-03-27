@@ -7,7 +7,7 @@ export default function Home() {
         <title>coi </title>
         <meta name="mucea" content="web" />
       </Head> 
-      <h1>Bine ai venit la panouri solare.</h1>
+      <h1>Bine ai venit la panouri solare bre.</h1>
     </div>
   );
 }
