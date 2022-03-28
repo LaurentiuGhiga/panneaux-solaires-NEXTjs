@@ -1,17 +1,18 @@
 import Head from "next/head";
-import styles from '../styles/Home.module.css';
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>coi </title>
-        <meta name="mucea" content="web" />
-      </Head> 
-      <h1 className={styles.title}>Bine ai venit la panouri solare bre.</h1>
-      <p className={styles.description}>Vrei sa cumperi?</p>
-      <p className={styles.description}>Cate vrei?</p>
-      <p className={styles.description}>Nu vrei, a?</p>
+        <title>Next Energy </title>
+        <meta
+          name="keywords"
+          content="Proiectam, producem si montam sisteme de structuri pentru panouri fotovoltaice, panouri solare, kituri solare, structuri fotovoltaice, montaj panouri soalre, panou fotovoltaic 445 W Solvis, 450 W BauerGermania, 540 W Solvis, Canadian Solar, Eco Delta, EV GO, K2 Systems, Obersen, Sharp, Solvis, Wattrom "
+        />
+      </Head>
+      <h1> Bine ai venit la Next Energy</h1>
+      
     </div>
   );
 }
