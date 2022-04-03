@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import HeaderLink from "../components/HeaderLink";
-import SolarPowerIcon from '@mui/icons-material/SolarPower';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import CottageIcon from '@mui/icons-material/Cottage';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+import SolarPowerIcon from "@mui/icons-material/SolarPower";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import CottageIcon from "@mui/icons-material/Cottage";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 
 function Home() {
   return (
@@ -20,12 +20,13 @@ function Home() {
         </div>
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
-          <HeaderLink Icon={CottageIcon} text="Acasa"/>
-          <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi"/>
-          <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare"/>          
-          <HeaderLink Icon={AddIcCallIcon} text="Contact"/>
+            <HeaderLink Icon={CottageIcon} text="Acasa" />
+            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi" />
+            <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare" />
+            <HeaderLink Icon={AddIcCallIcon} text="Contact" />
           </div>
-          </div>
+          <button className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5">Sign in</button>
+        </div>
       </header>
     </div>
   );
