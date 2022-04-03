@@ -25,7 +25,12 @@ function Home() {
             <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare" />
             <HeaderLink Icon={AddIcCallIcon} text="Contact" />
           </div>
-          <button className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5">Sign in</button>
+          <div className="pl-4">
+            <button className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2">
+            Sign in
+          </button>
+          </div>
+          
         </div>
       </header>
     </div>
