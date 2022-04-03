@@ -1,8 +1,9 @@
-import React from 'react'
-
-function HeaderLink() {
+function HeaderLink({Icon, text}) {
   return (
-    <div>HeaderLink</div>
+      <div>
+          <Icon />
+      </div>
+  
   )
 }
 
