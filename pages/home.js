@@ -5,10 +5,11 @@ import SolarPowerIcon from "@mui/icons-material/SolarPower";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import CottageIcon from "@mui/icons-material/Cottage";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 
 function Home() {
   return (
-    <div>
+    <div className="space-y-10 relative">
       <header className="flex justify-around items-center py-4">
         <div className="relative w-36 h-10">
           <Image
@@ -27,12 +28,35 @@ function Home() {
           </div>
           <div className="pl-4">
             <button className="text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2">
-            Sign in
-          </button>
+              Sign in
+            </button>
           </div>
-          
         </div>
       </header>
+      <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
+        <div className="space-y-6 xl:space-y-10 ">
+          <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
+            Bun venit la comunitatea intreprinderilor care produc energie de la soare !
+          </h1>
+          <div className="space-y-4">
+            <div className="intent">
+              <h2 className="text-xl">Structuri pentru panouri fotovoltaice</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+            <div className="intent">
+              <h2 className="text-xl">Produsele noastre</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+            <div className="intent">
+              <h2 className="text-xl">Structuri si sisteme la comanda</h2>
+              <ArrowForwardIosRoundedIcon className="text-gray-700" />
+            </div>
+          </div>
+        </div>
+        <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-16 right-5">
+          <Image src="/benner.webp" layout="fill" priority />
+        </div>
+      </main>
     </div>
   );
 }
