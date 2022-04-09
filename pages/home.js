@@ -6,10 +6,19 @@ import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 import CottageIcon from "@mui/icons-material/Cottage";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
+import Head from "next/head";
 
 function Home() {
   return (
     <div className="space-y-10 relative">
+       <Head>
+        <title>The Sun </title>
+        <meta
+          name="description"
+          content="Proiectam, producem si montam sisteme de structuri pentru panouri fotovoltaice, panouri solare, kituri solare, structuri fotovoltaice, montaj panouri soalre, panou fotovoltaic 445 W Solvis, 450 W BauerGermania, 540 W Solvis, Canadian Solar, Eco Delta, EV GO, K2 Systems, Obersen, Sharp, Solvis, Wattrom "
+        />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <header className="flex justify-around items-center py-4">
         <div className="relative w-36 h-10">
           <Image
@@ -54,7 +63,7 @@ function Home() {
           </div>
         </div>
         <div className="relative xl:absolute w-80 h-80 xl:w-[650px] xl:h-[650px] top-16 right-5">
-          <Image src="/benner.webp" layout="fill" priority />
+          <Image src="/baner2.png" layout="fill" priority />
         </div>
       </main>
     </div>
