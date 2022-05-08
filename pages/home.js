@@ -32,7 +32,7 @@ function Home({ providers }) {
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
             <HeaderLink Icon={CottageIcon} text="Acasa" />
-            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi" />
+            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noiiiii" />
             <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare" />
             <HeaderLink Icon={AddIcCallIcon} text="Contact" />
           </div>
@@ -51,7 +51,7 @@ function Home({ providers }) {
           ))}
         </div>
       </header>
-      
+
       <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
         <div className="space-y-6 xl:space-y-10 ">
           <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
