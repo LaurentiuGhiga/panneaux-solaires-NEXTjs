@@ -32,7 +32,7 @@ function Home({ providers }) {
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
             <HeaderLink Icon={CottageIcon} text="Acasa" />
-            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noiiiii" />
+            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi" />
             <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare" />
             <HeaderLink Icon={AddIcCallIcon} text="Contact" />
           </div>
