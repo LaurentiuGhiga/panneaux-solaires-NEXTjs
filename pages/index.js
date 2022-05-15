@@ -1,4 +1,6 @@
+import { signOut } from "next-auth/react";
 import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -11,7 +13,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <h1> Bun venit la  The Sun !</h1>
+      <Header />
+      
     </div>
   );
 }
