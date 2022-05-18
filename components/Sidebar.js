@@ -23,7 +23,7 @@ function Sidebar() {
             {session?.user?.name}
           </h4>
           <p className="text-black/60 dark:text-white/75 text-sm">
-            ghiga-laurentiu@yahoo.com
+            {session?.user?.email}
           </p>
         </div>
         <div className="hidden md:inline text-left dark:text-white/75 text-sm">
