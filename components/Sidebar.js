@@ -20,7 +20,7 @@ function Sidebar() {
         />
         <div className="mt-5 py-4 space-x-0.5">
           <h4 className="hover:underline decoration-purple-700 underline-offset-1 cursor-pointer">
-            Laurentiu
+            {session?.user?.name}
           </h4>
           <p className="text-black/60 dark:text-white/75 text-sm">
             ghiga-laurentiu@yahoo.com
