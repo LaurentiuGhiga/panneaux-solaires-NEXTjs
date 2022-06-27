@@ -5,8 +5,7 @@ import { handlePostState, useSSRPostsState } from "../atoms/postAtom";
 import Post from "./Post";
 
 function Feed({ posts }) {
-  //const entries = Object.entries(posts);
-  console.log("posts=====", posts);
+ 
   const [realtimePosts, setRealtimePosts] = useState([]);
   const [handlePost, setHandlePost] = useRecoilState(handlePostState);
   const [useSSRPosts, setUseSSRPosts] = useRecoilState(useSSRPostsState);
@@ -25,7 +24,7 @@ function Feed({ posts }) {
     };
 
     fetchPosts();
-  }, [handlePost]);
+  });
   return (
     <div className="space-y-6 pb-24 max-w-lg">
       <Input />
