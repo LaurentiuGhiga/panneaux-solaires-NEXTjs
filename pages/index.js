@@ -78,7 +78,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       session,
-      articles: results.articles,
+      articles: results.articles | undefined,
       posts: posts.map((post) => ({
         _id: post._id.toString(),
         input: post.input,
