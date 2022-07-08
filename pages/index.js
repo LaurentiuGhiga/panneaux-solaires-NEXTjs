@@ -72,13 +72,13 @@ export async function getServerSideProps(context) {
     .toArray();
 
   //Get Google News API
-  const res = await fetch(
+  const results = await fetch(
     `https://newsapi.org/v2/top-headlines?country=ro&apiKey=${process.env.NEWS_API_KEY}`
   ).then((res) => res.json()) 
   return {
     props: {
       session,
-      articles: res.articles || null,
+      articles: results.articles,
       posts: posts.map((post) => ({
         _id: post._id.toString(),
         input: post.input,
