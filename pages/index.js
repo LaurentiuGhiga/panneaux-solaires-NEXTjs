@@ -12,7 +12,7 @@ import { connectToDatabase } from "../util/mongodb";
 import Widgets from "../components/Widgets";
 
 export default function Home({posts, data}) {
-  const { results = [] } = data;
+  const { articles = [] } = data;
   console.log('data', data);
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
@@ -42,7 +42,7 @@ export default function Home({posts, data}) {
           <Sidebar />
           <Feed posts={posts} />
         </div>
-        <Widgets results={results}/>
+        <Widgets articles={articles}/>
         <AnimatePresence>
           {modalOpen && (
             <Modal handleClose={() => setModalOpen(false)} type={modalType} />
