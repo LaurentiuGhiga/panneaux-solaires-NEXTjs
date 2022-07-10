@@ -74,7 +74,7 @@ export async function getServerSideProps(context) {
     .toArray();
 
   //Get Google News API
-  const defaultEndpoint = `https://newsdata.io/api/1/news?apikey=${process.env.NEWS_API_KEY}`;
+  const defaultEndpoint = `https://newsdata.io/api/1/news?apikey=pub_90751928aa7d199206ad3752c0d50f6b2984&country=ro&category=business,environment`;
   const res = await fetch(defaultEndpoint);
   const data = await res.json();
 
