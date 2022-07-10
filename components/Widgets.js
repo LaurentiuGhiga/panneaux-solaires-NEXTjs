@@ -3,7 +3,7 @@ import FiberManualRecordRoundedIcon from "@mui/icons-material/FiberManualRecordR
 import Image from "next/image";
 import TimeAgo from "timeago-react";
 
-function Widgets({ articles }) {
+function Widgets({ results }) {
   return (
     <div className="hidden xl:inline space-y-2">
       {/* News */}
@@ -14,7 +14,7 @@ function Widgets({ articles }) {
         </div>
 
         <div className="space-y-1">
-          {articles.map((result) => {
+          {results.slice(0,5).map((result) => {
             const { title, url, publishedAt } = result;
             return(
             <div
