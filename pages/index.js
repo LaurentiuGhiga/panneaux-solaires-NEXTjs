@@ -12,7 +12,7 @@ import { connectToDatabase } from "../util/mongodb";
 import Widgets from "../components/Widgets";
 
 export default function Home({posts, data}) {
-  const { results = [] } = data;
+  const { articles = [] } = data;
   console.log('data', data);
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
@@ -42,7 +42,7 @@ export default function Home({posts, data}) {
           <Sidebar />
           <Feed posts={posts} />
         </div>
-        <Widgets results={results}/>
+        <Widgets articles={articles}/>
         <AnimatePresence>
           {modalOpen && (
             <Modal handleClose={() => setModalOpen(false)} type={modalType} />
@@ -74,7 +74,7 @@ export async function getServerSideProps(context) {
     .toArray();
 
   //Get Google News API
-  const defaultEndpoint = `https://newsdata.io/api/1/news?apikey=pub_90751928aa7d199206ad3752c0d50f6b2984&country=ro&category=business,environment`;
+  const defaultEndpoint = `https://newsapi.org/v2/top-headlines?country=ro&apiKey=14161dbf929f4300937aeb760ff8d64d`;
   const res = await fetch(defaultEndpoint);
   const data = await res.json();
 
