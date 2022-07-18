@@ -8,8 +8,10 @@ import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import Head from "next/head";
 import { getProviders, signIn } from "next-auth/react";
+import { useRouter } from "next/router";
 
 function Home({ providers }) {
+  const router = useRouter();
   return (
     <div className="space-y-10 relative">
       <Head>
@@ -31,9 +33,9 @@ function Home({ providers }) {
         </div>
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
-            <HeaderLink Icon={CottageIcon} text="Acasa" />
-            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi" />
-            <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare" />
+            <a href="/coi"><HeaderLink Icon={CottageIcon} text="Acasa" /></a>
+            <HeaderLink Icon={OndemandVideoIcon} text="Despre Noi" onClick={()=>router.push("/about")}/>
+            <HeaderLink Icon={SolarPowerIcon} text="Sisteme Solare"/>
             <HeaderLink Icon={AddIcCallIcon} text="Contact" />
           </div>
 
@@ -55,8 +57,7 @@ function Home({ providers }) {
       <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto">
         <div className="space-y-6 xl:space-y-10 ">
           <h1 className="text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0">
-            Bun venit la comunitatea intreprinderilor care produc energie de la
-            soare !
+            Bun venit la comunitatea prosumatorilor !
           </h1>
           <div className="space-y-4">
             <div className="intent">
@@ -64,7 +65,7 @@ function Home({ providers }) {
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
             <div className="intent">
-              <h2 className="text-xl">Produsele noastre</h2>
+              <h2 onClick={()=>router.push("/products")} className="text-xl">Produsele noastre</h2>
               <ArrowForwardIosRoundedIcon className="text-gray-700" />
             </div>
             <div className="intent">

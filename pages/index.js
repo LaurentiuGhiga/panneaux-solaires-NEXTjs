@@ -16,7 +16,7 @@ export default function Home({posts, data}) {
   console.log('data', data);
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
-  const router = useRouter;
+  const router = useRouter();
   const { staus } = useSession({
     required: true,
     onUnauthenticated() {
